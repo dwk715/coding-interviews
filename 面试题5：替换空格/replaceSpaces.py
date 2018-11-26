@@ -22,7 +22,7 @@ def replace(string):
     while 0 <= index_of_original < index_of_new:
         if string[index_of_original] == ' ':
             index_of_new -= 2
-            string[index_of_new: index_of_new+3] = '%20'
+            string[index_of_new: index_of_new + 3] = '%20'
         else:
             string[index_of_new] = string[index_of_original]
         index_of_new -= 1
