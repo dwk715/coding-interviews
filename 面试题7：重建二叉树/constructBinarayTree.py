@@ -31,5 +31,7 @@ class Solution:
         else:
             root = TreeNode(pre[0])
             # 利用递归思想， 将左右树通过.index()出入
-            root.left = self.re_construct_binary_tree(pre[1:tin.index(pre[0])+1], tin[:tin.index(pre[0])])
-            root.right = self.re_construct_binary_tree(pre[tin.index(pre[0])+1:], tin[tin.index(pre[0])+1:])
+            root.left = self.re_construct_binary_tree(pre[1:tin.index(pre[0]) + 1], tin[:tin.index(pre[0])])
+            root.right = self.re_construct_binary_tree(pre[tin.index(pre[0]) + 1:], tin[tin.index(pre[0]) + 1:])
+
+
